@@ -44,11 +44,26 @@ export default function HacerPedido() {
         setUbicacion(link);
         setCargandoUbicacion(false);
       },
-      () => {
-        alert("No se pudo obtener la ubicación.");
+      (error) => {
+        console.error("Error de geolocalización:", error);
+
+        if (error.code === 1) {
+          alert("Debes permitir el acceso a la ubicación.");
+        } else if (error.code === 2) {
+          alert("No se pudo determinar tu ubicación.");
+        } else if (error.code === 3) {
+          alert("La ubicación tardó demasiado en responder.");
+        } else {
+          alert("Error al obtener la ubicación.");
+        }
+
         setCargandoUbicacion(false);
       },
-      { enableHighAccuracy: true, timeout: 10000 }
+      {
+        enableHighAccuracy: true,
+        timeout: 15000,
+        maximumAge: 0,
+      }
     );
   };
 
