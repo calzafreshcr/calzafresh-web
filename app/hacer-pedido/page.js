@@ -203,7 +203,7 @@ export default function HacerPedido() {
         {/* Ubicación */}
         <div className="mb-6">
           <label className="block text-sm font-semibold mb-2">
-            Ubicación (opcional)
+            Ubicación (requerida)
           </label>
 
           <div className="flex items-center gap-3">
@@ -243,7 +243,7 @@ export default function HacerPedido() {
         </motion.button>
 
         <p className="text-xs text-white/60 mt-3 text-center">
-          * Campos obligatorios. La ubicación es opcional.
+          * Campos obligatorios. 
         </p>
       </div>
     </div>
