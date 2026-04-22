@@ -21,20 +21,14 @@ export default function Home() {
         <Boton href="/info" icon="ℹ️">
           Información / Contáctanos
         </Boton>
+
+        {/* NUEVO BOTÓN DE PRECIOS */}
+        <Boton href="/precios" icon="🟢">
+          Precios
+        </Boton>
+
       </div>
 
     </main>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
