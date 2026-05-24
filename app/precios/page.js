@@ -10,21 +10,21 @@ export default function Precios() {
         <div className="border rounded-xl p-5 shadow">
           <h2 className="text-xl font-semibold mb-2">Lavado Externo</h2>
           <p className="text-gray-600 mb-3">Limpieza exterior del calzado</p>
-          <p className="text-2xl font-bold text-green-600">₡3,000</p>
+          <p className="text-2xl font-bold text-green-600">₡2,500</p>
         </div>
 
         {/* Lavado Completo */}
         <div className="border rounded-xl p-5 shadow">
           <h2 className="text-xl font-semibold mb-2">Lavado Completo</h2>
           <p className="text-gray-600 mb-3">Interior + exterior + desinfección</p>
-          <p className="text-2xl font-bold text-green-600">₡4,000</p>
+          <p className="text-2xl font-bold text-green-600">₡3,000</p>
         </div>
 
         {/* Calzado de Niño */}
         <div className="border rounded-xl p-5 shadow">
           <h2 className="text-xl font-semibold mb-2">Calzado de Niñ@</h2>
           <p className="text-gray-600 mb-3">Servicio especial para calzado infantil</p>
-          <p className="text-2xl font-bold text-green-600">₡3,000</p>
+          <p className="text-2xl font-bold text-green-600">₡2,500</p>
         </div>
 
       </div>
